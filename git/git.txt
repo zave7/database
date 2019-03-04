@@ -190,12 +190,14 @@ git rm --cached .idea/modules.xml
 git rm --cached -r .idea/ 
 - .idea 폴더 하위의 모든 파일 삭제
 
+·······························
 
+git config --global gui.encoding utf-8
+- gitk 한글이 깨지는 경우
 
-
-
-
-
+git config core.quotepath false
+- 이 설정은 일반적이지 않은 문자를 탈출문자로 처리하는 기능수행
+그래서 한글 앞에 탈출 문자를 붙인 탓에 이런 문제가 발생
 
 
 
